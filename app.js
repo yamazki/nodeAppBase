@@ -1,8 +1,10 @@
-/* 1. expressモジュールをロードし、インスタンス化してappに代入。*/
-var express = require("express");
-var app = express();
+const app = require("express")();
+const http = require('http').Server(app);
 
-/* 2. listen()メソッドを実行して3000番ポートで待ち受け。*/
+app.get('/', function(req, res){
+  res.send('<h1>Hello world</h1>');
+});
+
 var server = app.listen(1337, function(){
     console.log("Node.js is listening to PORT:" + server.address().port);
 });
