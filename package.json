@@ -2,7 +2,7 @@
   "name": "root",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "nodemon": "^1.14.12"
   },
@@ -10,7 +10,7 @@
     "express": "^4.16.2"
   },
   "scripts": {
-    "start": "./node_modules/.bin/nodemon index.js",
+    "start": "./node_modules/.bin/nodemon ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
